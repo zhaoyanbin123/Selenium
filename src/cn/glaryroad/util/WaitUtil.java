@@ -22,4 +22,10 @@ public class WaitUtil {
 		 WebDriverWait wait=new WebDriverWait(driver, 10);
 		 wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(xpathExpression)));
 	 }
+	 
+	 //显示等待页面元素出现的封装方法，参数表示元素的by对象，此函数可以支持更多的定位表达式
+	 public static void waitWebElement(WebDriver driver,By by){
+		 WebDriverWait wait=new WebDriverWait(driver, 10);
+		 wait.until(ExpectedConditions.presenceOfElementLocated(by));
+	 }
 }

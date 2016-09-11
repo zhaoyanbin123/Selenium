@@ -61,6 +61,8 @@ public class ExcelUtil {
 		}
 	}
 	
+	
+	
 	//在Excel文件的执行单元格中写入数据
 	@SuppressWarnings("static-access")
 	public static void setCellData(int RowNum,int ColNum,String Result)throws Exception{
